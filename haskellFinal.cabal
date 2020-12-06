@@ -1,0 +1,17 @@
+cabal-version:       2.4
+name:                haskellFinal
+version:             0.1.0.0
+license:             BSD-3-Clause
+license-file:        LICENSE
+author:              Azzim
+maintainer:          mmd.azzim@gmail.com
+extra-source-files:  CHANGELOG.md
+
+executable haskellFinal
+  main-is: Main.hs
+  other-modules: Src.Features
+                , Src.Misc
+                , Src.ErrorChecking
+  build-depends: base ^>=4.14.1.0
+                , MonadRandom >= 0.5
+  default-language:    Haskell2010
