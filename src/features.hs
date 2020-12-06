@@ -28,6 +28,7 @@ customDice = do
     hFlush stdout
     putStrLn ("\t" ++ diceNum ++ "D" ++ faceVal ++ ": "++ (show executeRoll))
     putStr "++++++++++++++++++++++++++++++++++++++++++++"
+    hFlush stdout
     putStrLn ("\n\tTotal Dice Value Result: " ++ (show (sum executeRoll))) -- sum the list of all value received
     putStrLn "++++++++++++++++++++++++++++++++++++++++++++"
     pressAnyKey
@@ -71,6 +72,7 @@ multipleDice = do
             ++ "\n\t\t\t" ++ numD12 ++ "D12: " ++ (show valueD12)
             ++ "\n\t\t\t" ++ numD20 ++ "D20: " ++ (show valueD20))
     putStr "++++++++++++++++++++++++++++++++++++++++++++"
+    hFlush stdout
     putStrLn ("\n\tTotal Dice Value Result: " ++ (show ((sum valueD4) + (sum valueD6) + (sum valueD8) + (sum valueD10) + (sum valueD12) + (sum valueD20)))) -- sum the list of all value received
     putStrLn "++++++++++++++++++++++++++++++++++++++++++++"
     pressAnyKey -- pure aesthethic
